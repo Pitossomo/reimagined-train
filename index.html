@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter & TODO List</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body class="flex-col">
+  <header class="chameleon-card flex-col">
+    <h1>Final Project</h1>
+    <p>simple apps made for course 3.2 Intro to JS inside the bootcamp DIO Impulso JS 2022</p>
+  </header>
+
+  <div class="chameleon-card flex-col counter-app">
+    <h2 >Counter</h2>
+    <p id="counter">0</p>
+    <div class="buttons">
+      <button id="subtract">&#8722;</button>
+      <button id="add">+</button>
+    </div>
+  </div>
+
+  <form class="chameleon-card flex-col todo-list-app">
+    <h2>To Do List</h2>
+    <div id="todo-list"></div>
+    <div class="input-box">
+      <label>New task</label>
+      <input type="Text" placeholder="New task to do">
+    </div>
+    <button type="submit" id="add-task">Add</button>
+  </form>
+
+  <footer class="flex-col">
+    <p>&copy;Made by <a target="_blank" href="https://github.com/Pitossomo">Pitossomo</a></p>
+  </footer>
+</body>
+</html>
