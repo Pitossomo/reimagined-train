@@ -1,6 +1,6 @@
 # reimagined-train
 Final project to course "3.2 Intro to JS" in bootcamp DIO Impulso JS 2022
 
-![preview](https://user-images.githubusercontent.com/2355303/178370735-a2f6a466-748c-4c6d-96d7-513f862dd54a.png)
+![preview](https://user-images.githubusercontent.com/2355303/178572563-0a892271-1466-4884-9d5f-3888fb031143.png)
 
-can be seen in [Github Pages]((https://pitossomo.github.io/reimagined-train/))
+can be seen in [Github Pages](https://pitossomo.github.io/reimagined-train/)
