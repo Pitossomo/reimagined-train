@@ -1,8 +1,17 @@
 window.onload = () => {
   console.log("page loaded")
+
+  const addButton = document.getElementById("add")
+  const minusButton = document.getElementById("subtract")
   const todoForm = document.getElementById("todo-list-app")
+
+  console.log("add button encountered", addButton)
+  console.log("minus button encountered", minusButton) 
   console.log("form encountered", todoForm)
+
   todoForm.addEventListener("submit", handleNewTaskSubmit)
+  addButton.addEventListener("click", handleAddClick)
+  minusButton.addEventListener("click", handleMinusClick)
 }
 
 function newTodoItem (task) {
@@ -34,4 +43,18 @@ function handleNewTaskSubmit(event) {
 
   newTaskInput.value = ''
   console.log("new task field reseted", newTaskInput.value);
+}
+
+function handleAddClick() {
+  console.log("add event working fine"); 
+  let counter = document.getElementById("counter")
+  console.log("counter found", counter);
+  counter.innerHTML = Number(counter.innerHTML) + 1
+}
+
+function handleMinusClick() {
+  console.log("minus event working fine");
+  let counter = document.getElementById("counter")
+  console.log("counter found", counter);
+  counter.innerHTML = Number(counter.innerHTML) - 1
 }

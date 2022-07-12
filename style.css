@@ -78,13 +78,21 @@ h2 {
   align-items: center;
   font-weight: 800;
   width:20px;
-  padding-bottom: 1px;
   height:20px;
   border-radius: 50%;
   color: rgb(var(--secondary-color));
   background-color: rgb(var(--main-color));
   border: 1px solid rgb(var(--secondary-color));
 }
+
+button#add {
+  padding-bottom: 2px;
+}
+
+button#subtract {
+  padding-bottom: 4px;
+}
+
 
 .counter-app button:hover {
   box-shadow: 0 0 3px 3px rgba(255,255,255,30%);
@@ -99,7 +107,8 @@ h2 {
 
 .todo-list-app {
   padding: 18px;
-  background-image: radial-gradient(ellipse, rgba(var(--main-color), 40%) 0%, rgba(var(--main-color), 20%) 70%);
+  /*background-color: rgba(var(--main-color), 0.8);*/
+  background-image: radial-gradient(ellipse, rgba(var(--main-color), 100%) 0%, rgba(var(--main-color), 80%) 100%);
   border-radius: 10px;
 }
 
