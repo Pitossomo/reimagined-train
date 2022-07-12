@@ -25,12 +25,12 @@
     </div>
   </div>
 
-  <form class="chameleon-card flex-col todo-list-app">
+  <form id="todo-list-app" class="flex-col todo-list-app">
     <h2>To Do List</h2>
-    <div id="todo-list"></div>
-    <div class="input-box">
+    <ul id="todo-list"></ul>
+    <div class="new-task">
       <label>New task</label>
-      <input type="Text" placeholder="New task to do">
+      <input type="text" id="newTask" placeholder="New task to do" required>
     </div>
     <button type="submit" id="add-task">Add</button>
   </form>

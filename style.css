@@ -1,6 +1,6 @@
 :root {
-  --main-color: 238, 174, 202;
-  --secondary-color: 103, 100, 185;
+  --main-color: 238, 174, 202; /*238, 174, 202*/
+  --secondary-color: 50, 103, 165; /*103, 100, 185*/
   --auxiliar-text-color: gray;
 }
 
@@ -97,32 +97,52 @@ h2 {
   font-weight: 600;
 }
 
-.todo-list-app .input-box {
+.todo-list-app {
+  padding: 18px;
+  background-image: radial-gradient(ellipse, rgba(var(--main-color), 40%) 0%, rgba(var(--main-color), 20%) 70%);
+  border-radius: 10px;
+}
+
+.todo-list-app h2 {
+  color: rgb(var(--secondary-color))
+}
+
+#todo-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 50vw;
+}
+
+#todo-list li {
+  white-space: nowrap;
+  list-style-type: none;
+  max-width: inherit;
+}
+
+#todo-list li label {
+  color: rgb(var(--secondary-color));
+  padding: 5px;
+  max-width: inherit;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.todo-list-app .new-task {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 32px;
+  width: calc(100%-5px);
+  margin:10px 0;
   background-color: lightgrey;
   border: 1px solid var(--secondary-color);
-  color: var(--auxiliar-text-color);
   border-radius: 3px;
-  margin: 10px;
+  color: var(--auxiliar-text-color);
   padding-left: 5px;
 }
 
-.todo-list-app .input-box:focus-within {
-  outline: var(--main-color) 2px;
-  box-shadow: 0 0 3px 3px rgba(255,255,255,30%);
-}
-
-.todo-list-app label {
-  display: none;
-  margin: 0;
-  padding: 0;
-  font-size: 12px;
-}
-
-.todo-list-app input {
+.todo-list-app .new-task input {
   background: none;
   border: none;
   outline: none;
@@ -133,7 +153,19 @@ h2 {
   color: var(--auxiliar-text-color)
 }
 
-.todo-list-app input::placeholder {
+.todo-list-app .new-task:focus-within {
+  outline: var(--main-color) 2px;
+  box-shadow: 0 0 3px 3px rgba(255,255,255,30%);
+}
+
+.todo-list-app .new-task label {
+  display: none;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+.todo-list-app .new-task input::placeholder {
   font-size: 12px;
 }
 
@@ -156,7 +188,7 @@ h2 {
 }
 
 footer {
-  padding: 50px;
+  padding-bottom: 50px;
 }
 
 footer a {
